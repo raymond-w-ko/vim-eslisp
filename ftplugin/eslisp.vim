@@ -1,0 +1,18 @@
+if (exists("b:did_ftplugin"))
+  finish
+endif
+let b:did_ftplugin = 1
+
+let s:cpo_save = &cpo
+set cpo&vim
+
+setlocal lisp
+" alphabet, numbers, underscore, and hyphen, and other puncutation
+setlocal iskeyword=@,48-57,_,-,?,:,.
+setlocal lispwords=lambda,function,macro,capmacro,var,if,?:,while,dowhile,for,forin,try,catch,finally
+" I assume that these will eventually be custom defined via macros created by
+" the user, or make it into the core language
+setlocal lispwords+=when,unless
+
+let &cpo = s:cpo_save
+unlet s:cpo_save
