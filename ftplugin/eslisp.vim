@@ -14,5 +14,9 @@ setlocal lispwords=lambda,function,macro,capmacro,var,if,?:,while,dowhile,for,fo
 " the user, or make it into the core language
 setlocal lispwords+=when,unless
 
+" Lisp comments are routinely nested (e.g. ;;; SECTION HEADING)
+setlocal comments=n:;
+setlocal commentstring=;\ %s
+
 let &cpo = s:cpo_save
 unlet s:cpo_save
