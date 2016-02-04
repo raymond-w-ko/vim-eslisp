@@ -13,6 +13,7 @@ syntax keyword eslispNull null undefined
 syntax keyword eslispStatement return
 syntax keyword eslispOperator new delete instanceof
 syntax keyword eslispMacro macro capmacro quote quasiquote unquote unquote-splicing
+syntax keyword eslispBoolean true false
 
 syntax region eslispString start=/\v"/ skip=/\v\\./ end=/\v"/
 syntax region eslispComment start=/\v;/ skip=/\v\\./ end=/\v$/
@@ -30,5 +31,6 @@ hi def link eslispFunction Function
 hi def link eslispMacro Function
 hi def link eslispStatement Statement
 hi def link eslispOperator Operator
+hi def link eslispBoolean Boolean
 
 let b:current_syntax = "eslisp"
