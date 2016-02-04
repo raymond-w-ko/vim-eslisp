@@ -8,7 +8,7 @@ syntax keyword eslispBranch break continue
 syntax keyword eslispRepeat while dowhile for forin
 syntax keyword eslispException throw try catch finally debugger
 syntax keyword eslispFunction lambda function
-syntax keyword eslispKeyword array object regex var . get label new seq block
+syntax keyword eslispKeyword array object regex var . get label new seq block this
 syntax keyword eslispNull null undefined
 syntax keyword eslispStatement return
 syntax keyword eslispOperator new delete instanceof
