@@ -14,7 +14,7 @@ syntax keyword eslispSpecialForm
     \ return
     \ macro capmacro quote quasiquote unquote unquote-splicing
 
-syntax match eslispOperator "\<(_++\|_--\|--_\|++_\|\<+\>\|\<-\>\|\<*\>\|\</\>\|%\|<\|>\|=\|&\||\|!\|\~\|==\|===\|!=\|!==\|<=\|>=)\>"
+syntax match eslispOperator "\<(_++\|_--\|--_\|++_\|\<+\>\|\<-\>\|\<*\>\|\</\>\|+=\|-=\|*=\|/=\|%\|<\|>\|=\|&\||\|!\|\~\|==\|===\|!=\|!==\|<=\|>=)\>"
 syntax keyword eslispBuiltinFunctions
     \ array object regex
     \ new delete instanceof
