@@ -8,7 +8,7 @@ set cpo&vim
 
 setlocal lisp
 " alphabet, numbers, underscore, and hyphen, and other puncutation
-setlocal iskeyword=@,48-57,_,-,?,:,$
+setlocal iskeyword=1-31,33-39,42-255
 setlocal lispwords=lambda,function,macro,capmacro,var,if,?:,switch,while,dowhile,for,forin,try,catch,finally
 " I assume that these will eventually be custom defined via macros created by
 " the user, or make it into the core language
