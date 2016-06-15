@@ -8,7 +8,7 @@ syntax keyword eslispSpecialForm
     \ break continue
     \ throw try catch finally debugger
     \ lambda function
-    \ . get
+    \ . get in
     \ var label
     \ seq block
     \ return
