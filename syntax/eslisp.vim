@@ -14,6 +14,10 @@ syntax keyword eslispSpecialForm
     \ return
     \ macro capmacro quote quasiquote unquote unquote-splicing
 
+syntax keyword eslispClojureForm
+    \ def defn
+    \ defarray defobject
+
 syntax match eslispOperator "\<(_++\|_--\|--_\|++_\|\<+\>\|\<-\>\|\<*\>\|\</\>\|+=\|-=\|*=\|/=\|%\|<\|>\|=\|&\||\|!\|\~\|==\|===\|!=\|!==\|<=\|>=)\>"
 syntax keyword eslispBuiltinFunctions
     \ array object regex
@@ -26,6 +30,7 @@ syntax region eslispString start=/\v"/ skip=/\v\\./ end=/\v"/
 syntax region eslispComment start=/\v;/ skip=/\v\\./ end=/\v$/
 
 hi def link eslispSpecialForm Identifier
+hi def link eslispClojureForm Identifier
 hi def link eslispOperator Function
 hi def link eslispBuiltinFunctions Function
 hi def link eslispConstants Boolean

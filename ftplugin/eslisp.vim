@@ -13,6 +13,8 @@ setlocal lispwords=lambda,function,macro,capmacro,var,if,?:,switch,while,dowhile
 " I assume that these will eventually be custom defined via macros created by
 " the user, or make it into the core language
 setlocal lispwords+=when,unless
+" Clojure
+setlocal lispwords+=def,defn,defarray,defobject
 
 " Lisp comments are routinely nested (e.g. ;;; SECTION HEADING)
 setlocal comments=n:;
